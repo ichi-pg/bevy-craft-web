@@ -7,20 +7,6 @@
         flex-direction: column;
         align-items: center;
       }
-      .canvas-container {
-        position: relative;
-        height: 0;
-        overflow: hidden;
-        padding-top: 56.25%;
-      }
-      #bevy-canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 1920px;
-      }
     </style>
     <script type="module">
       import init from './bevy-craft.js'
@@ -34,9 +20,7 @@
   </head>
   <body>
     <div class="flex-container">
-      <div class="canvas-container">
-        <canvas id="bevy-canvas"></canvas>
-      </div>
+      <canvas id="bevy-canvas"></canvas>
       <p>
         <a href="https://github.com/ichi-pg/bevy-craft-web">https://github.com/ichi-pg/bevy-craft-web</a>
       </p>
