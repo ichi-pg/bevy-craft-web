@@ -1,6 +1,6 @@
 # Bevy craft Web
 
-## URL
+## Web
 
 * <https://ichi-pg.github.io/bevy-craft-web/>
 
