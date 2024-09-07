@@ -2,14 +2,24 @@
 <html lang="en">
   <head>
     <style>
-      .container {
+      .flex-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
       }
-      #bevy-canvas{
+      .canvas-container {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        padding-top: 56.25%;
+      }
+      #bevy-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        aspect-ratio: 16 / 9;
+        max-width: 1920px;
       }
     </style>
     <script type="module">
@@ -23,12 +33,12 @@
     </script>
   </head>
   <body>
-    <div class="container">
-      <canvas id="bevy-canvas"></canvas>
-    </div>
-    <div class="container">
+    <div class="flex-container">
+      <div class="canvas-container">
+        <canvas id="bevy-canvas"></canvas>
+      </div>
       <p>
-        <a href="https://github.com/ichi-pg/bevy-craft">https://github.com/ichi-pg/bevy-craft</a>
+        <a href="https://github.com/ichi-pg/bevy-craft-web">https://github.com/ichi-pg/bevy-craft-web</a>
       </p>
     </div>
   </body>
